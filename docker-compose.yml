@@ -1,0 +1,13 @@
+web:
+  build: .
+  restart: unless-stopped
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - /srv/www/html/:/www/html
+    - /srv/www/letsencrypt:/etc/letsencrypt
+    
+    - /home/some-user/:/www/html/data/some-user
+    # ...
+  env_file: env.conf

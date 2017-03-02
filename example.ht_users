@@ -1,0 +1,6 @@
+# mkpasswd -m SHA-512 <passwd>
+# arch: AUR debian-whois-mkpasswd
+# others: apt-get install whois
+name1:password1
+name2:password2:comment
+name3:password3
